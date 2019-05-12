@@ -54,3 +54,8 @@
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+
+  .car-details{
+      margin-left:200px;
+      padding-top:30px;
+  }
