@@ -66,3 +66,18 @@
     padding-top:30px;
     margin-right:100px;
   }
+  .profile-driver{
+    padding-left:20px;
+  }
+  .profile-summary{
+    padding:30px;
+  }
+  .profile-summary img {
+    border-radius: 50%;
+  }
+.btn-2{
+ background-color:green;
+}
+.btn-3{
+  background-color:red;
+}
