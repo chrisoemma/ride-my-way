@@ -8,7 +8,7 @@ export class Login extends Component {
                     <label>Email</label>
                     <input type="email" placeholder="email" />
                     <label>Password</label>
-                    <input type="password" placeholder="password" />
+                    <input type="password" placeholder="************" />
                     <button>Login</button>
                 </form>
             </div>
