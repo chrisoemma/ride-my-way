@@ -58,6 +58,27 @@ input[type="password"],
   font-weight: bold;
   border-radius: 50px;
 }
+.login .nav-links {
+  padding-top: 30px;
+}
+.login .nav-links .signup {
+  float: right;
+}
+.register .nav-links {
+  padding-top: 20px;
+}
+.register .nav-links li {
+  color: #000;
+  list-style: none;
+  cursor: pointer;
+  float: right;
+}
+.login .nav-links li,
+.register .nav-links li {
+  color: #000;
+  list-style: none;
+  cursor: pointer;
+}
 .register select {
   display: block;
   width: 100%;

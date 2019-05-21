@@ -17,6 +17,9 @@ export class Register extends Component {
                         <option>Passenger</option>
                     </select>
                     <button>Register</button>
+                    <div className="nav-links">
+                        <li onClick={this.props.checkRegisterUser}>Sign In</li>
+                    </div>
                 </form>
             </div>
         )

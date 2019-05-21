@@ -10,6 +10,10 @@ export class Login extends Component {
                     <label>Password</label>
                     <input type="password" placeholder="************" />
                     <button>Login</button>
+                    <div className="nav-links">
+                        <li>Forgot Password?</li>
+                        <li className="signup" onClick={this.props.checkRegisterUser}>Sign Up</li>
+                    </div>
                 </form>
             </div>
         )

@@ -2,12 +2,14 @@ import React, { Component } from 'react'
 import Login from './auth/Login'
 import Register from './auth/Register'
 
+
 export class Home extends Component {
     constructor() {
         super()
         this.state = {
             isUser: true
         }
+        this.checkRegisterUser = this.checkRegisterUser.bind(this)
     }
 
     checkRegisterUser() {
@@ -21,7 +23,7 @@ export class Home extends Component {
         return (
             <div className="home_componnent">
                 <h1>Ride-My-Way</h1>
-                {this.state.isUser ? <Login /> : <Register />}
+                {this.state.isUser ? <Login checkRegisterUser={this.checkRegisterUser} /> : <Register checkRegisterUser={this.checkRegisterUser} />}
             </div>
         )
     }
