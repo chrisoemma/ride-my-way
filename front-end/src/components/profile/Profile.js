@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 
-export class DriverProfile extends Component {
+export class Profile extends Component {
     render() {
         return (
             <div>
+
             </div>
         )
     }
 }
 
-export default DriverProfile
+export default Profile
