@@ -8,10 +8,10 @@ export class Navbar extends Component {
                     <nav>
                         <ul>
                             <div className="brand">
-                                <li>Ride-My-way</li>
+                                <li><a href="/">Ride-My-way</a></li>
                             </div>
-                            <li>Notication</li>
-                            <li>Logo</li>
+                            <li><a href="#">Notication</a></li>
+                            <li><a>Logo</a></li>
                         </ul>
                     </nav>
                 </header>

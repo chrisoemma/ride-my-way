@@ -92,3 +92,7 @@ input[type="password"],
   font-family: "Exo", sans-serif;
   font-size: 15px;
 }
+.navbar {
+  height: 8vmin;
+  background-color: #232426;
+}
