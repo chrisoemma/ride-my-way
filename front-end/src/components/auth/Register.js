@@ -16,7 +16,7 @@ export class Register extends Component {
                         <option>Driver</option>
                         <option>Passenger</option>
                     </select>
-                    <button>Login</button>
+                    <button>Register</button>
                 </form>
             </div>
         )
