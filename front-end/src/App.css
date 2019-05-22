@@ -93,6 +93,39 @@ input[type="password"],
   font-size: 15px;
 }
 .navbar {
-  height: 8vmin;
-  background-color: #232426;
+  height: 10vmin;
+  overflow: hidden;
 }
+
+.navbar header nav ul {
+  margin: 10px auto;
+  list-style-type: none;
+  overflow: hidden;
+  z-index: 100;
+}
+/* .navbar header nav ul .brand {
+  width: 80%;
+  float: right;
+  background-color: #fff;
+  height: 8vmin;
+}
+.navbar header nav ul .brand li a {
+  text-decoration: none;
+  color: #000;
+}
+.navbar header nav ul .nav-links {
+  background-color: #232426;
+  height: 8vmin;
+  float: left;
+  width: 20%;
+  position: relative;
+}
+.navbar header nav ul li {
+  display: inline;
+  padding: 15px 20px;
+}
+
+.navbar header nav ul .nav-links li a {
+  text-decoration: none;
+  color: white;
+} */
