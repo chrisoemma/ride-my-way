@@ -111,7 +111,7 @@ input[type="password"],
 }
 
 .navbar header nav ul {
-  margin: 10px auto;
+  margin: 0 auto;
   list-style-type: none;
   overflow: hidden;
   z-index: 100;
@@ -173,6 +173,36 @@ input[type="password"],
   line-height: 18px;
   border-radius: 50%;
   box-shadow: 0 0 1px #333;
+}
+
+.sidebar {
+  height: 100%;
+  width: 23%;
+  z-index: 1;
+  left: 0;
+  position: absolute;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding-left: 40px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #464646;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+}
+
+.sidebar a i {
+  margin: 15px;
+}
+
+.sidebar a:hover {
+  background-color: #f7fcfd;
+  padding-left: 35px;
+  color: rgb(74, 74, 247);
 }
 
 /* .navbar header nav ul .brand {
