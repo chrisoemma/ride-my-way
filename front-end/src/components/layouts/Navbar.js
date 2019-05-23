@@ -9,8 +9,8 @@ export class Navbar extends Component {
                         <ul>
                             <li className="brand"><a href="#">Ride-My-way</a></li>
                             <div className="pull-right">
-                                <li><a href="#">Logo</a></li>
-                                <li><a href="#">Notication</a></li>
+                                <li><a href="#">Chrisostom <img src="" /></a></li>
+                                <li><a href="#"><i className="fa fa-bell badge" data-badge="5" aria-hidden="true"></i></a></li>
                             </div>
                         </ul>
                     </nav>

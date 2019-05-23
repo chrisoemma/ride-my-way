@@ -103,6 +103,55 @@ input[type="password"],
   overflow: hidden;
   z-index: 100;
 }
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding-top: 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
+}
+
+.navbar .brand a {
+  color: #000;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2em;
+}
+
+.navbar .pull-right {
+  float: right;
+  width: 80%;
+  background-color: #232426;
+  height: 10vmin;
+}
+
+.navbar .pull-right li a {
+  float: right;
+  margin-right: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.badge {
+  position: relative;
+}
+.badge[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 0.7em;
+  background: rgb(243, 26, 26);
+  color: white;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px #333;
+}
+
 /* .navbar header nav ul .brand {
   width: 80%;
   float: right;
