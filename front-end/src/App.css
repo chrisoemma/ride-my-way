@@ -204,6 +204,17 @@ input[type="password"],
   padding-left: 35px;
   color: rgb(74, 74, 247);
 }
+.sidebar button {
+  margin: 40px;
+  padding: 13px;
+  width: 200px;
+  color: #fff;
+  background-color: #00c851;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  font-family: "Poppins", sans-serif;
+  border-style: none;
+}
 
 /* .navbar header nav ul .brand {
   width: 80%;
