@@ -108,6 +108,9 @@ input[type="password"],
 .navbar {
   height: 10vmin;
   overflow: hidden;
+  box-shadow: 0 8px 6px -6px rgb(155, 153, 153);
+  z-index: 100;
+  top: 0;
 }
 
 .navbar header nav ul {
