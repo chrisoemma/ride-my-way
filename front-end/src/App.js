@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/Home'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import PassengerProfile from './components/passenger/PassengerProfile'
+import PassengerDashboard from './components/passenger/PassengerDashboard'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           </React.Fragment>
         )} />
         <Route path="/passenger_profile" component={PassengerProfile} />
+        <Route path="/passenger_dashboard" component={PassengerDashboard} />
       </div>
     </Router>
   );
