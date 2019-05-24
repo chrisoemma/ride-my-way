@@ -218,6 +218,12 @@ input[type="password"],
   font-family: "Poppins", sans-serif;
   border-style: none;
 }
+.main {
+  float: right;
+  width: 77%;
+  background-color: #f2f8f9;
+  height: 100vmin;
+}
 
 /* .navbar header nav ul .brand {
   width: 80%;
