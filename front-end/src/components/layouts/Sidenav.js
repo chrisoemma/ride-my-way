@@ -22,6 +22,7 @@ export class SideNav extends Component {
     render() {
         return (
             <div>
+                <DriverSideNav navDropDown={this.navDropDown} isOpen={this.state.isOpen} />
                 <PassengerSideNav navDropDown={this.navDropDown} isOpen={this.state.isOpen} />
             </div>
         )
