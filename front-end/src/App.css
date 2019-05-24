@@ -188,6 +188,9 @@ input[type="password"],
   padding-top: 16px;
 }
 
+.sidebar ul li {
+  list-style-type: none;
+}
 .sidebar a {
   padding-left: 40px;
   text-decoration: none;
@@ -201,12 +204,19 @@ input[type="password"],
 .sidebar a i {
   margin: 15px;
 }
+.sidebar a {
+  cursor: pointer;
+}
+.sidebar a .fa-angle-right {
+  float: right;
+  margin-right: 40px;
+}
 
-.sidebar a:hover {
+.sidebar li:hover {
   background-color: #f7fcfd;
-  padding-left: 35px;
   color: rgb(74, 74, 247);
 }
+
 .sidebar button {
   margin: 40px;
   padding: 13px;
