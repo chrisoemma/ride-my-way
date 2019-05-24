@@ -7,10 +7,10 @@ export class Sidenav extends Component {
                 <button>FIND A RIDE</button>
                 <ul>
                     <li><a href="#home"><i className="fa fa-fw fa-home"></i>Dashbord</a></li>
-                    <li><a><i className="fa fa-fw fa-car"></i> Rides
+                    <li onClick={this.props.navDropDown}><a><i className="fa fa-fw fa-car"></i> Rides
                     <i className="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
-                        <div className="inside-navlinks">
+                        <div className={this.props.isOpen ? 'open-navlinks' : 'close-navlinks'}>
                             <ul>
                                 <li><a href="/">New ride</a></li>
                                 <li><a href="/">Previous ride</a></li>

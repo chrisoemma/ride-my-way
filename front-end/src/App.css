@@ -214,9 +214,16 @@ input[type="password"],
 
 .sidebar li:hover {
   background-color: #f7fcfd;
+}
+.sidebar a:hover {
   color: rgb(74, 74, 247);
 }
-
+.close-navlinks {
+  display: none;
+}
+.open-navlinks {
+  display: block;
+}
 .sidebar button {
   margin: 40px;
   padding: 13px;
