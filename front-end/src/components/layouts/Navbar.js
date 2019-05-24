@@ -7,7 +7,7 @@ export class Navbar extends Component {
                 <header>
                     <nav>
                         <ul>
-                            <li className="brand"><a href="#">Ride-My-way</a></li>
+                            <li className="brand"><a href="#">Ride-My-Way</a></li>
                             <div className="pull-right">
                                 {/*These two below nav are reversed due to lack of improper css styles*/}
                                 <li><a href="#"><span> Chrisso </span><img src={require('../images/default.png')} alt="user" /></a></li>
