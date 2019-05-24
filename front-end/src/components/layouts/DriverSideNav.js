@@ -4,7 +4,7 @@ export class DriverSideNav extends Component {
     render() {
         return (
             <div className="sidebar">
-                <button>FIND A RIDE</button>
+                <button>ACCEPT RIDE</button>
                 <ul>
                     <li><a href="#home"><i className="fa fa-fw fa-home"></i>Dashbord</a></li>
                     <li onClick={this.props.navDropDown}><a><i className="fa fa-fw fa-car"></i> Rides
@@ -12,8 +12,9 @@ export class DriverSideNav extends Component {
                     </a>
                         <div className={this.props.isOpen ? 'open-navlinks' : 'close-navlinks'}>
                             <ul>
-                                <li><a href="/">New ride</a></li>
-                                <li><a href="/">Previous ride</a></li>
+                                <li><a href="/">Offer a ride</a></li>
+                                <li><a href="/">Ride requests</a></li>
+                                <li><a href="/">Offered rides</a></li>
                             </ul>
                         </div>
                     </li>
