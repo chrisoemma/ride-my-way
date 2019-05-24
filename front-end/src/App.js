@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Home from './components/Home'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Profile from './components/profile/Profile'
+import PassengerProfile from './components/passenger/PassengerProfile'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
             <Home />
           </React.Fragment>
         )} />
-        <Route path="/dashboard" component={Profile} />
+        <Route path="/passenger_profile" component={PassengerProfile} />
       </div>
     </Router>
   );

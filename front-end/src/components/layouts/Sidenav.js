@@ -1,28 +1,31 @@
 import React, { Component } from 'react'
+import DriverSideNav from '../layouts/DriverSideNav'
+import PassengerSideNav from '../layouts/PassengerSideNav'
 
-export class Sidenav extends Component {
+
+export class SideNav extends Component {
+    constructor() {
+        super()
+        this.state = {
+            isOpen: false
+        }
+        this.navDropDown = this.navDropDown.bind(this)
+    }
+
+    navDropDown() {
+        this.setState(prev => {
+            return {
+                isOpen: !prev.isOpen
+            }
+        })
+    }
     render() {
         return (
-            <div className="sidebar">
-                <button>FIND A RIDE</button>
-                <ul>
-                    <li><a href="#home"><i className="fa fa-fw fa-home"></i>Dashbord</a></li>
-                    <li onClick={this.props.navDropDown}><a><i className="fa fa-fw fa-car"></i> Rides
-                    <i className="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
-                        <div className={this.props.isOpen ? 'open-navlinks' : 'close-navlinks'}>
-                            <ul>
-                                <li><a href="/">New ride</a></li>
-                                <li><a href="/">Previous ride</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#services"><i className="fa fa-fw fa-wrench"></i> Settings</a></li>
-                </ul>
+            <div>
+                <PassengerSideNav navDropDown={this.navDropDown} isOpen={this.state.isOpen} />
             </div>
-
         )
     }
 }
 
-export default Sidenav
+export default SideNav 
