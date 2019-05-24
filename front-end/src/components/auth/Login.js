@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 export class Login extends Component {
 
-    handleSubmit() {
-        return <Redirect />;
+    handleSubmit(e) {
     }
     render() {
         return (
@@ -25,4 +24,4 @@ export class Login extends Component {
     }
 }
 
-export default Login
+export default withRouter(Login)
