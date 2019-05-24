@@ -1,12 +1,21 @@
 import React from 'react';
 import './App.css';
 import Home from './components/Home'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Profile from './components/profile/Profile'
 
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+    <Router>
+      <div>
+        <Route exact path="/" render={props => (
+          <React.Fragment>
+            <Home />
+          </React.Fragment>
+        )} />
+        <Route path="/dashboard" component={Profile} />
+      </div>
+    </Router>
   );
 }
 

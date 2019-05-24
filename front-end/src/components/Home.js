@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Login from './auth/Login'
 import Register from './auth/Register'
-import Profile from './profile/Profile'
+
 
 
 export class Home extends Component {
@@ -29,7 +29,6 @@ export class Home extends Component {
                         <Login checkRegisterUser={this.checkRegisterUser} /> :
                         <Register checkRegisterUser={this.checkRegisterUser} />}
                 </div>
-                <Profile />
             </div>
 
         )
