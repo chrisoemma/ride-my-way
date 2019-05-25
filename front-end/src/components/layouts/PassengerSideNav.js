@@ -5,7 +5,7 @@ export class PassengerSideNav extends Component {
     render() {
         return (
             <div className="sidebar">
-                <button>FIND A RIDE</button>
+                <Link to="/find_ride"><button>FIND A RIDE</button></Link>
                 <ul>
                     <li><Link to="/passenger_dashboard"><i className="fa fa-fw fa-home"></i>Dashbord</Link></li>
                     <li onClick={this.props.navDropDown}><Link><i className="fa fa-fw fa-car"></i> Rides
