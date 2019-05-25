@@ -7,7 +7,8 @@ export class SideNav extends Component {
     constructor() {
         super()
         this.state = {
-            isOpen: false
+            isOpen: false,
+            isDriver: false
         }
         this.navDropDown = this.navDropDown.bind(this)
     }
@@ -22,11 +23,15 @@ export class SideNav extends Component {
     render() {
         return (
             <div>
-                <DriverSideNav navDropDown={this.navDropDown} isOpen={this.state.isOpen} />
-                <PassengerSideNav navDropDown={this.navDropDown} isOpen={this.state.isOpen} />
+                {this.state.isDriver ?
+                    <DriverSideNav navDropDown={this.navDropDown} isOpen={this.state.isOpen} /> :
+                    <PassengerSideNav navDropDown={this.navDropDown} isOpen={this.state.isOpen} />}
             </div>
         )
     }
 }
 
-export default SideNav 
+export default SideNav
+
+
+
