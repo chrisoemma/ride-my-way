@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export class DriverSideNav extends Component {
     render() {
@@ -6,15 +7,15 @@ export class DriverSideNav extends Component {
             <div className="sidebar">
                 <button>ACCEPT RIDE</button>
                 <ul>
-                    <li><a href="#home"><i className="fa fa-fw fa-home"></i>Dashbord</a></li>
-                    <li onClick={this.props.navDropDown}><a><i className="fa fa-fw fa-car"></i> Rides
+                    <li><Link to="/driver_dashboard"><i className="fa fa-fw fa-home"></i>Dashbord</Link></li>
+                    <li onClick={this.props.navDropDown}><Link><i className="fa fa-fw fa-car"></i> Rides
                     <i className="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
+                    </Link>
                         <div className={this.props.isOpen ? 'open-navlinks' : 'close-navlinks'}>
                             <ul>
-                                <li><a href="/">Offer a ride</a></li>
-                                <li><a href="/">Ride requests</a></li>
-                                <li><a href="/">Offered rides</a></li>
+                                <li><Link to="/">Offer a ride</Link></li>
+                                <li><Link to="/">Ride requests</Link></li>
+                                <li><Link to="/">Offered rides</Link></li>
                             </ul>
                         </div>
                     </li>
