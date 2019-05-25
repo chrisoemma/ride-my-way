@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export class PassengerSideNav extends Component {
     render() {
@@ -6,14 +7,14 @@ export class PassengerSideNav extends Component {
             <div className="sidebar">
                 <button>FIND A RIDE</button>
                 <ul>
-                    <li><a href="#home"><i className="fa fa-fw fa-home"></i>Dashbord</a></li>
-                    <li onClick={this.props.navDropDown}><a><i className="fa fa-fw fa-car"></i> Rides
+                    <li><Link to="/passenger_dashboard"><i className="fa fa-fw fa-home"></i>Dashbord</Link></li>
+                    <li onClick={this.props.navDropDown}><Link><i className="fa fa-fw fa-car"></i> Rides
                     <i className="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
+                    </Link>
                         <div className={this.props.isOpen ? 'open-navlinks' : 'close-navlinks'}>
                             <ul>
-                                <li><a href="find_ride">Ride Offers</a></li>
-                                <li><a href="/">Previous rides</a></li>
+                                <li><Link to="/find_ride">Ride Offer</Link></li>
+                                <li><Link to="/">Previous rides</Link></li>
                             </ul>
                         </div>
                     </li>
