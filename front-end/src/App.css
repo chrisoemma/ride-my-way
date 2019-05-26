@@ -308,29 +308,3 @@ tr:nth-child(even) {
   box-sizing: border-box;
   border-radius: 5px;
 }
-/* .navbar header nav ul .brand {
-  width: 80%;
-  float: right;
-  background-color: #fff;
-  height: 8vmin;
-}
-.navbar header nav ul .brand li a {
-  text-decoration: none;
-  color: #000;
-}
-.navbar header nav ul .nav-links {
-  background-color: #232426;
-  height: 8vmin;
-  float: left;
-  width: 20%;
-  position: relative;
-}
-.navbar header nav ul li {
-  display: inline;
-  padding: 15px 20px;
-}
-
-.navbar header nav ul .nav-links li a {
-  text-decoration: none;
-  color: white;
-} */
