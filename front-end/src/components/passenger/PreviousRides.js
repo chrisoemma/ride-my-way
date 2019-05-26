@@ -9,6 +9,14 @@ function PreviousRides() {
             <SideNav />
             <div className="main">
                 <div class="table">
+                    <div class="heading_content">
+                        <button>Back</button>
+                        <center><h4>Previous rides</h4></center>
+                        <div class="search">
+                            <label>Search: </label>
+                            <input type="text" />
+                        </div>
+                    </div>
                     <table>
                         <tr>
                             <th>Date</th>
