@@ -7,6 +7,7 @@ import PassengerDashboard from './components/passenger/PassengerDashboard'
 import NewRide from './components/passenger/NewRide'
 import DriverProfile from './components/driver/DriverProfile'
 import PreviousRides from './components/passenger/PreviousRides'
+import OfferedRides from './components/driver/OfferedRides'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/driver_profile" component={DriverProfile} />
         <Route path="/find_ride" component={NewRide} />
         <Route path="/previous_rides" component={PreviousRides} />
+        <Route path="/offered_rides" component={OfferedRides} />
       </div>
     </Router>
   );

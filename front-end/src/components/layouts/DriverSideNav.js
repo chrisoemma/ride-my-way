@@ -15,7 +15,7 @@ export class DriverSideNav extends Component {
                             <ul>
                                 <li><Link to="/">Offer a ride</Link></li>
                                 <li><Link to="/">Ride requests</Link></li>
-                                <li><Link to="/">Offered rides</Link></li>
+                                <li><Link to="/offered_rides">Offered rides</Link></li>
                             </ul>
                         </div>
                     </li>

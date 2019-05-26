@@ -8,7 +8,7 @@ export class SideNav extends Component {
         super()
         this.state = {
             isOpen: false,
-            isDriver: false
+            isDriver: true
         }
         this.navDropDown = this.navDropDown.bind(this)
     }
