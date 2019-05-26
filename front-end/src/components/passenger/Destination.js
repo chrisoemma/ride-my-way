@@ -1,17 +1,15 @@
 import React, { Component } from 'react'
 
-export class Destination extends Component {
-    render() {
-        return (
-            <div style={componentStyle}>
-                <form className="destination">
-                    <label>Destination</label>
-                    <input type="text" placeholder="location" />
-                    <button type="submit">Find</button>
-                </form>
-            </div>
-        )
-    }
+function Destination() {
+    return (
+        <div style={componentStyle}>
+            <form className="destination">
+                <label>Destination</label>
+                <input type="text" placeholder="location" />
+                <button type="submit">Find</button>
+            </form>
+        </div>
+    )
 }
 
 const componentStyle = {
