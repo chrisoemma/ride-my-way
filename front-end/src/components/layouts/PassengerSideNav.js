@@ -14,7 +14,7 @@ export class PassengerSideNav extends Component {
                         <div className={this.props.isOpen ? 'open-navlinks' : 'close-navlinks'}>
                             <ul>
                                 <li><Link to="/find_ride">Ride Offer</Link></li>
-                                <li><Link to="/">Previous rides</Link></li>
+                                <li><Link to="/previous_rides">Previous rides</Link></li>
                             </ul>
                         </div>
                     </li>
