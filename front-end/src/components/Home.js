@@ -21,14 +21,14 @@ class Home extends Component {
 
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <div className="home_componnent">
                     <h1>Ride-My-Way</h1>
                     {this.state.isUser ?
                         <Login checkRegisterUser={this.checkRegisterUser} /> :
                         <Register checkRegisterUser={this.checkRegisterUser} />}
                 </div>
-            </div>
+            </React.Fragment>
         )
     }
 }

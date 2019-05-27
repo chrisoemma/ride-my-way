@@ -6,7 +6,7 @@ import CurrentMap from '../passenger/CurrentMap'
 function RideRequests() {
 
     return (
-        <div>
+        <React.Fragment>
             <Navbar />
             <SideNav />
             <div class="main">
@@ -15,7 +15,7 @@ function RideRequests() {
                     <button>Accept</button>
                 </div>
             </div>
-        </div>
+        </React.Fragment>
     )
 }
 

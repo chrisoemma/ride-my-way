@@ -5,15 +5,17 @@ import Destination from './Destination'
 import CurrentMap from './CurrentMap'
 
 function NewRide() {
+
     return (
-        <div>
+
+        <React.Fragment>
             <Navbar />
             <SideNav />
             <div class="main">
                 <CurrentMap />
                 <Destination />
             </div>
-        </div>
+        </React.Fragment>
     )
 }
 

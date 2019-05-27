@@ -4,7 +4,7 @@ import SideNav from '../layouts/SideNav'
 
 function PreviousRides() {
     return (
-        <div>
+        <React.Fragment>
             <Navbar />
             <SideNav />
             <div className="main">
@@ -45,7 +45,7 @@ function PreviousRides() {
                     </table>
                 </div>
             </div>
-        </div>
+        </React.Fragment>
 
     )
 

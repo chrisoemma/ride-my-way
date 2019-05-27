@@ -13,7 +13,7 @@ import RideRequests from './components/driver/RideRequests'
 function App() {
   return (
     <Router>
-      <div>
+      <React.Fragment>
         <Route exact path="/" component={Home} />
         <Route path="/passenger_profile" component={PassengerProfile} />
         <Route path="/passenger_dashboard" component={PassengerDashboard} />
@@ -22,7 +22,7 @@ function App() {
         <Route path="/previous_rides" component={PreviousRides} />
         <Route path="/offered_rides" component={OfferedRides} />
         <Route path="/accept_rides" component={RideRequests} />
-      </div>
+      </React.Fragment>
     </Router>
   );
 }

@@ -22,11 +22,11 @@ class SideNav extends Component {
 
     render() {
         return (
-            <div>
+            <React.Fragment>
                 {this.state.isDriver ?
                     <DriverSideNav navDropDown={this.navDropDown} isOpen={this.state.isOpen} /> :
                     <PassengerSideNav navDropDown={this.navDropDown} isOpen={this.state.isOpen} />}
-            </div>
+            </React.Fragment>
         )
     }
 }

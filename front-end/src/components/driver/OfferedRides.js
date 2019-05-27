@@ -4,7 +4,7 @@ import SideNav from '../layouts/SideNav'
 
 function OfferedRides() {
     return (
-        <div>
+        <React.Fragment>
             <Navbar />
             <SideNav />
             <div className="main">
@@ -45,7 +45,7 @@ function OfferedRides() {
                     </table>
                 </div>
             </div>
-        </div>
+        </React.Fragment>
 
     )
 

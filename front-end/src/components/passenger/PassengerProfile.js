@@ -5,13 +5,13 @@ import SideNav from '../layouts/SideNav'
 function PassengerProfile() {
 
     return (
-        <div>
+        <React.Fragment>
             <Navbar />
             <SideNav />
             <div class="main">
 
             </div>
-        </div>
+        </React.Fragment>
     )
 }
 
