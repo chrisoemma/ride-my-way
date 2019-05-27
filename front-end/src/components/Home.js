@@ -3,6 +3,7 @@ import Login from './auth/Login';
 import Register from './auth/Register';
 
 class Home extends Component {
+
     constructor() {
         super()
         this.state = {
@@ -20,6 +21,7 @@ class Home extends Component {
     }
 
     render() {
+
         return (
             <React.Fragment>
                 <div className="home_componnent">

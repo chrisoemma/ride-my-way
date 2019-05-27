@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 function PassengerSideNav(props) {
 
     return (
+
         <div className="sidebar">
             <Link to="/find_ride"><button>FIND A RIDE</button></Link>
             <ul>

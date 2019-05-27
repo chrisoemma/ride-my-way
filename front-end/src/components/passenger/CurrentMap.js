@@ -6,6 +6,7 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 function CurrentMap() {
 
     return (
+
         <div style={{ height: '100vh', width: '100%' }}>
             <GoogleMapReact
                 bootstrapURLKeys={{ key: 'AIzaSyCDoWXY6XalboEVGKUQ7U0ML93t4m1PryQ' }}

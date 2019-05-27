@@ -3,7 +3,9 @@ import Navbar from '../layouts/Navbar';
 import SideNav from '../layouts/SideNav';
 
 function OfferedRides() {
+
     return (
+
         <React.Fragment>
             <Navbar />
             <SideNav />

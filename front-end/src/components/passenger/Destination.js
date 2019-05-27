@@ -1,7 +1,9 @@
 import React from 'react';
 
 function Destination() {
+
     return (
+
         <div style={componentStyle}>
             <form className="destination">
                 <label>Destination</label>

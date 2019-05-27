@@ -11,7 +11,9 @@ import OfferedRides from './components/driver/OfferedRides';
 import RideRequests from './components/driver/RideRequests';
 
 function App() {
+
   return (
+
     <Router>
       <React.Fragment>
         <Route exact path="/" component={Home} />
@@ -24,6 +26,7 @@ function App() {
         <Route path="/accept_rides" component={RideRequests} />
       </React.Fragment>
     </Router>
+
   );
 }
 

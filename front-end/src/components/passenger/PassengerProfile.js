@@ -5,6 +5,7 @@ import SideNav from '../layouts/SideNav';
 function PassengerProfile() {
 
     return (
+
         <React.Fragment>
             <Navbar />
             <SideNav />

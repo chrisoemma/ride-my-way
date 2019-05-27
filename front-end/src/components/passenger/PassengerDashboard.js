@@ -5,6 +5,7 @@ import SideNav from '../layouts/SideNav'
 function PassengerDashboard() {
 
     return (
+
         <React.Fragment>
             <Navbar />
             <SideNav />

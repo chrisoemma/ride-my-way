@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 function DriverSideNav(props) {
 
     return (
+
         <div className="sidebar">
             <Link to="/accept_rides"><button>ACCEPT RIDE</button></Link>
             <ul>
@@ -22,7 +23,6 @@ function DriverSideNav(props) {
                 <li><a href="#services"><i className="fa fa-fw fa-wrench"></i> Settings</a></li>
             </ul>
         </div>
-
     )
 }
 

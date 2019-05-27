@@ -3,6 +3,7 @@ import React from 'react';
 function Register(props) {
 
     return (
+
         <div className="register">
             <form>
                 <label>Username</label>

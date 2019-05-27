@@ -6,6 +6,7 @@ import CurrentMap from '../passenger/CurrentMap';
 function RideRequests() {
 
     return (
+
         <React.Fragment>
             <Navbar />
             <SideNav />

@@ -3,6 +3,7 @@ import DriverSideNav from '../layouts/DriverSideNav';
 import PassengerSideNav from '../layouts/PassengerSideNav';
 
 class SideNav extends Component {
+
     constructor() {
         super()
         this.state = {
@@ -22,6 +23,7 @@ class SideNav extends Component {
 
     render() {
         return (
+
             <React.Fragment>
                 {this.state.isDriver ?
                     <DriverSideNav navDropDown={this.navDropDown} isOpen={this.state.isOpen} /> :
