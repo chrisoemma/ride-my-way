@@ -1,6 +1,6 @@
-import React from 'react'
-import Navbar from '../layouts/Navbar'
-import SideNav from '../layouts/SideNav'
+import React from 'react';
+import Navbar from '../layouts/Navbar';
+import SideNav from '../layouts/SideNav';
 
 function OfferedRides() {
     return (
@@ -51,4 +51,4 @@ function OfferedRides() {
 
 }
 
-export default OfferedRides
+export default OfferedRides;

@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function PassengerSideNav(props) {
 
@@ -24,4 +24,4 @@ function PassengerSideNav(props) {
     )
 }
 
-export default PassengerSideNav
+export default PassengerSideNav;

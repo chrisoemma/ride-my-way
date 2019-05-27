@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import Home from './components/Home'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import PassengerProfile from './components/passenger/PassengerProfile'
-import PassengerDashboard from './components/passenger/PassengerDashboard'
-import NewRide from './components/passenger/NewRide'
-import DriverProfile from './components/driver/DriverProfile'
-import PreviousRides from './components/passenger/PreviousRides'
-import OfferedRides from './components/driver/OfferedRides'
-import RideRequests from './components/driver/RideRequests'
+import Home from './components/Home';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import PassengerProfile from './components/passenger/PassengerProfile';
+import PassengerDashboard from './components/passenger/PassengerDashboard';
+import NewRide from './components/passenger/NewRide';
+import DriverProfile from './components/driver/DriverProfile';
+import PreviousRides from './components/passenger/PreviousRides';
+import OfferedRides from './components/driver/OfferedRides';
+import RideRequests from './components/driver/RideRequests';
 
 function App() {
   return (

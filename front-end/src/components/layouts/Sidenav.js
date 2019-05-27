@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import DriverSideNav from '../layouts/DriverSideNav'
-import PassengerSideNav from '../layouts/PassengerSideNav'
+import React, { Component } from 'react';
+import DriverSideNav from '../layouts/DriverSideNav';
+import PassengerSideNav from '../layouts/PassengerSideNav';
 
 class SideNav extends Component {
     constructor() {
@@ -31,7 +31,7 @@ class SideNav extends Component {
     }
 }
 
-export default SideNav
+export default SideNav;
 
 
 

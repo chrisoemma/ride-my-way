@@ -1,6 +1,6 @@
-import React from 'react'
-import Navbar from '../layouts/Navbar'
-import SideNav from '../layouts/SideNav'
+import React from 'react';
+import Navbar from '../layouts/Navbar';
+import SideNav from '../layouts/SideNav';
 
 function DriverProfile() {
 
@@ -13,4 +13,4 @@ function DriverProfile() {
     )
 }
 
-export default DriverProfile
+export default DriverProfile;

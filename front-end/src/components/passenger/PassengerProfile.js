@@ -1,6 +1,6 @@
-import React from 'react'
-import Navbar from '../layouts/Navbar'
-import SideNav from '../layouts/SideNav'
+import React from 'react';
+import Navbar from '../layouts/Navbar';
+import SideNav from '../layouts/SideNav';
 
 function PassengerProfile() {
 
@@ -15,4 +15,4 @@ function PassengerProfile() {
     )
 }
 
-export default PassengerProfile
+export default PassengerProfile;

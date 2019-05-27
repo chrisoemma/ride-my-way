@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Register(props) {
 
@@ -25,4 +25,4 @@ function Register(props) {
     )
 }
 
-export default Register
+export default Register;

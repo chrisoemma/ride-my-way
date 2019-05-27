@@ -1,7 +1,7 @@
-import React from 'react'
-import Navbar from '../layouts/Navbar'
-import SideNav from '../layouts/SideNav'
-import CurrentMap from '../passenger/CurrentMap'
+import React from 'react';
+import Navbar from '../layouts/Navbar';
+import SideNav from '../layouts/SideNav';
+import CurrentMap from '../passenger/CurrentMap';
 
 function RideRequests() {
 
@@ -20,4 +20,4 @@ function RideRequests() {
 }
 
 
-export default RideRequests
+export default RideRequests;

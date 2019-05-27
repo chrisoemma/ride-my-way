@@ -1,6 +1,6 @@
-import React from 'react'
-import Navbar from '../layouts/Navbar'
-import SideNav from '../layouts/SideNav'
+import React from 'react';
+import Navbar from '../layouts/Navbar';
+import SideNav from '../layouts/SideNav';
 
 function PreviousRides() {
     return (
@@ -51,4 +51,4 @@ function PreviousRides() {
 
 }
 
-export default PreviousRides
+export default PreviousRides;

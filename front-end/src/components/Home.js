@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import Login from './auth/Login'
-import Register from './auth/Register'
+import React, { Component } from 'react';
+import Login from './auth/Login';
+import Register from './auth/Register';
 
 class Home extends Component {
     constructor() {
@@ -33,4 +33,4 @@ class Home extends Component {
     }
 }
 
-export default Home
+export default Home;

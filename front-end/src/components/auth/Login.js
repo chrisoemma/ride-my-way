@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { withRouter } from 'react-router-dom';
 
 function Login(props) {
@@ -20,4 +20,4 @@ function Login(props) {
     )
 }
 
-export default withRouter(Login)
+export default withRouter(Login);

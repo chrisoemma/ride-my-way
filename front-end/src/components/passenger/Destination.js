@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Destination() {
     return (
@@ -19,4 +19,4 @@ const componentStyle = {
     width: '600px',
 }
 
-export default Destination
+export default Destination;
