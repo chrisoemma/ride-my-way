@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Navbar from '../layouts/Navbar'
 import SideNav from '../layouts/SideNav'
 import CurrentMap from '../passenger/CurrentMap'
