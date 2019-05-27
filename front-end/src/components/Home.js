@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import Login from './auth/Login'
 import Register from './auth/Register'
 
-
-
-export class Home extends Component {
+class Home extends Component {
     constructor() {
         super()
         this.state = {
@@ -20,6 +18,7 @@ export class Home extends Component {
             }
         })
     }
+
     render() {
         return (
             <div>
@@ -30,7 +29,6 @@ export class Home extends Component {
                         <Register checkRegisterUser={this.checkRegisterUser} />}
                 </div>
             </div>
-
         )
     }
 }

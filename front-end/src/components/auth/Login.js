@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom';
 
-export class Login extends Component {
+class Login extends Component {
 
     handleSubmit(e) {
     }
+
     render() {
         return (
             <div className="login">

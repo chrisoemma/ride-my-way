@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import DriverSideNav from '../layouts/DriverSideNav'
 import PassengerSideNav from '../layouts/PassengerSideNav'
 
-
-export class SideNav extends Component {
+class SideNav extends Component {
     constructor() {
         super()
         this.state = {
@@ -20,6 +19,7 @@ export class SideNav extends Component {
             }
         })
     }
+
     render() {
         return (
             <div>
