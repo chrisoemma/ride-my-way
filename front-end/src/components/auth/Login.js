@@ -1,28 +1,23 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { withRouter } from 'react-router-dom';
 
-class Login extends Component {
+function Login(props) {
 
-    handleSubmit(e) {
-    }
-
-    render() {
-        return (
-            <div className="login">
-                <form onSubmit={this.handleSubmit}>
-                    <label>Email</label>
-                    <input type="email" placeholder="email" />
-                    <label>Password</label>
-                    <input type="password" placeholder="************" />
-                    <button type="submit">Login</button>
-                    <div className="nav-links">
-                        <li>Forgot Password?</li>
-                        <li className="signup" onClick={this.props.checkRegisterUser}>Sign Up</li>
-                    </div>
-                </form>
-            </div>
-        )
-    }
+    return (
+        <div className="login">
+            <form>
+                <label>Email</label>
+                <input type="email" placeholder="email" />
+                <label>Password</label>
+                <input type="password" placeholder="************" />
+                <button type="submit">Login</button>
+                <div className="nav-links">
+                    <li>Forgot Password?</li>
+                    <li className="signup" onClick={props.checkRegisterUser}>Sign Up</li>
+                </div>
+            </form>
+        </div>
+    )
 }
 
 export default withRouter(Login)
