@@ -11,8 +11,8 @@ function Navbar() {
                         <li className="brand"><Link to="/">Ride-My-Way</Link></li>
                         <div className="pull-right">
                             {/*These two below nav are reversed due to lack of improper css styles*/}
-                            <li><a href="#"><span> Chrisso </span><img src={require('../images/default.png')} alt="user" /></a></li>
-                            <li><a href="#"><i className="fa fa-bell badge" data-badge="5" aria-hidden="true"></i></a></li>
+                            <li><Link to="/"> Chrisso<img src={require('../images/default.png')} alt="user" /></Link></li>
+                            <li><Link to="/"><i className="fa fa-bell badge" data-badge="5" aria-hidden="true"></i></Link></li>
                         </div>
                     </ul>
                 </nav>
