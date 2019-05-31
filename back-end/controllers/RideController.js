@@ -35,3 +35,22 @@ exports.newRide = (req, res, next) => {
         "data": newObject
     });
 }
+
+exports.joinRide = (req, res, next) => {
+    const obj = req.body;
+    const constObjt = { "createdAt": new Date(), "updatedAt": new Date() };
+    //create new object with date coloumns
+    const newObject = { ...constObjt, ...obj };
+    for (i = 0; i <= rides.rideOffers.length; i++) {
+        if (req.params.id == i) {
+            res.status(200).json({
+                "success": true,
+                "message": "Ride offer retrived successfully",
+                "data": {
+                    "ride": rides.rideOffers[req.params.id],
+                    "request": newObject
+                }
+            });
+        }
+    }
+}
