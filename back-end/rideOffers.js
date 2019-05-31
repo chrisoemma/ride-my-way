@@ -1,4 +1,4 @@
-let rideOffers = [
+exports.rideOffers = [
     {
         id: 1,
         passengerName: "Frank rashid",
