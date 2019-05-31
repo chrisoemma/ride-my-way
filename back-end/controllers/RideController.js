@@ -15,7 +15,7 @@ exports.singleRideOffer = (req, res, next) => {
                 "success": true,
                 "message": "Ride offer retrived successfully",
                 "data": rides.rideOffers[req.params.id]
-            })
+            });
         }
     }
 }
