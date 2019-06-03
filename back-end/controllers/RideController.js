@@ -18,6 +18,7 @@ exports.getRides = (req, res, next) => {
                         updatedAt: doc.updatedAt,
                         request: {
                             type: 'GET',
+                            url: 'localhost:4000/api/v1/rides/' + doc.id
                         }
                     }
                 })
