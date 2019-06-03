@@ -39,20 +39,26 @@ exports.singleRideOffer = (req, res, next) => {
     const id = req.params.id;
     Ride.findByPk(id)
         .then(doc => {
-            res.status(200).json({
-                code: 200,
-                message: 'Succesfully',
-                count: doc.length,
-                data: {
-                    id: doc.id,
-                    passengerId: doc.userId,
-                    pickupArea: doc.pickupArea,
-                    Destination: doc.destination,
-                    status: doc.status,
-                    createdAt: doc.createdAt,
-                    updatedAt: doc.updatedAt
-                }
-            })
+            if (doc) {
+                res.status(200).json({
+                    code: 200,
+                    message: 'Succesfully',
+                    count: doc.length,
+                    data: {
+                        id: doc.id,
+                        passengerId: doc.userId,
+                        pickupArea: doc.pickupArea,
+                        Destination: doc.destination,
+                        status: doc.status,
+                        createdAt: doc.createdAt,
+                        updatedAt: doc.updatedAt
+                    }
+                })
+            } else {
+                res.status(404).json({
+                    message: 'No valid entry for a given ID'
+                });
+            }
         })
         .catch(err => {
             console.log(err);
