@@ -34,17 +34,35 @@ exports.getRides = (req, res, next) => {
         });
 }
 
-// exports.singleRideOffer = (req, res, next) => {
-//     for (i = 0; i <= rides.rideOffers.length; i++) {
-//         if (req.params.id == i) {
-//             res.status(200).json({
-//                 "success": true,
-//                 "message": "Ride offer retrived successfully",
-//                 "data": rides.rideOffers[req.params.id]
-//             });
-//         }
-//     }
-// }
+exports.singleRideOffer = (req, res, next) => {
+    const id = req.params.id;
+    Ride.findByPk(id)
+        .then(doc => {
+            res.status(200).json({
+                code: 200,
+                message: 'Succesfully',
+                count: doc.length,
+                data: {
+                    id: doc.id,
+                    passengerId: doc.userId,
+                    pickupArea: doc.pickupArea,
+                    Destination: doc.destination,
+                    status: doc.status,
+                    createdAt: doc.createdAt,
+                    updatedAt: doc.updatedAt
+                }
+            })
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({
+                code: err.status,
+                error: err,
+                name: err.name,
+                stack: err.stack
+            });
+        });
+}
 
 // exports.newRide = (req, res, next) => {
 
