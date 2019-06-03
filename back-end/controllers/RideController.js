@@ -65,21 +65,44 @@ exports.singleRideOffer = (req, res, next) => {
         });
 }
 
-// exports.newRide = (req, res, next) => {
+exports.newRide = (req, res, next) => {
+    const ride = Ride.build({
+        userId: 2,
+        pickupArea: 'Canada',
+        destination: req.body.destination,
+        status: '',
+        createdAt: new Date(),
+        updatedAt: new Date()
+    });
+    ride
+        .save()
+        .then(result => {
+            res.status(200).json({
+                code: 201,
+                message: "Succesfully",
+                createdProduct: {
+                    id: result.id,
+                    passengerId: result.userId,
+                    pickupArea: result.pickupArea,
+                    Destination: result.destination,
+                    status: result.status,
+                    createdAt: result.createdAt,
+                    updatedAt: result.updatedAt,
+                    request: {
+                        type: 'POST',
+                        url: 'http://localhost:4000/rides/' + result.id
+                    }
+                }
+            });
+        })
+        .catch(err => {
+            console.log(err)
+            res.status(500).json({
+                error: err
+            });
+        });
 
-//     const obj = req.body;
-//     const lastElement = rides.rideOffers[rides.rideOffers.length - 1];
-//     const constObjt = { id: lastElement.id + 1, "createdAt": new Date(), "updatedAt": new Date() };
-//     //create new object with id,date coloumns
-//     const newObject = { ...constObjt, ...obj };
-//     //create new array of ride offers
-//     rides.rideOffers.push(newObject);
-//     res.status(200).json({
-//         "success": true,
-//         "message": "Ride offer added successfully",
-//         "data": newObject
-//     });
-// }
+}
 
 // exports.joinRide = (req, res, next) => {
 //     const obj = req.body;
