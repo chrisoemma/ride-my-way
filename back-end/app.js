@@ -1,11 +1,22 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+const db = require('./config/database');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const RideRouter = require('./routes/api/rides');
 
 var app = express();
+
+//testing db connection
+// db
+//   .authenticate()
+//   .then(() => {
+//     console.log('Connection has been established successfully.');
+//   })
+//   .catch(err => {
+//     console.error('Unable to connect to the database:', err);
+//   });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

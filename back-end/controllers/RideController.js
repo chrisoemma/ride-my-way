@@ -40,16 +40,18 @@ exports.joinRide = (req, res, next) => {
     const obj = req.body;
     const constObjt = { "createdAt": new Date(), "updatedAt": new Date() };
     //create new object with date coloumns
-    const newObject = { ...constObjt, ...obj };
+
+    const requestObject = { ...constObjt, ...obj };
+    const request = { "request": requestObject }
+
     for (i = 0; i <= rides.rideOffers.length; i++) {
         if (req.params.id == i) {
+            const prevObject = rides.rideOffers[req.params.id]
+            const newObject = { ...prevObject, ...request }
             res.status(200).json({
                 "success": true,
                 "message": "Ride offer retrived successfully",
-                "data": {
-                    "ride": rides.rideOffers[req.params.id],
-                    "request": newObject
-                }
+                "data": newObject
             });
         }
     }
