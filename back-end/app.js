@@ -5,6 +5,7 @@ const db = require('./config/database');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const RideRouter = require('./routes/api/rides');
+const UserRouter = require('./routes/api/users');
 
 var app = express();
 
@@ -29,6 +30,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/v1/rides', RideRouter);
+app.use('/api/v1/users', UserRouter);
+
 
 //error hundleling 
 app.use((res, req, next) => {
