@@ -29,9 +29,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+const passport = require('passport');
 require('./middleware/auth');
 
-app.use('/api/v1/rides', RideRouter);
+
+app.use('/api/v1/rides', passport.authenticate('jwt', { session: false }), RideRouter);
 app.use('/api/v1/users', UserRouter);
 
 
