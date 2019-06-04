@@ -31,11 +31,16 @@ exports.register = (req, res, next) => {
                         });
                         user.save()
                             .then(result => {
-                                res.status(200).json({
+                                res.status(201).json({
+                                    code: 201,
                                     message: 'User successfully created',
-                                    user: {
-                                        _id: result._id,
-                                        email: result.email
+                                    data: {
+                                        id: result.id,
+                                        firstName: result.firstName,
+                                        lastName: result.lastName,
+                                        email: result.email,
+                                        roleId: result.roleId
+
                                     }
                                 })
                             })
