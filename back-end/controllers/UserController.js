@@ -1,6 +1,7 @@
 const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const passport = require('passport');
 
 exports.register = (req, res, next) => {
     User
@@ -60,3 +61,41 @@ exports.register = (req, res, next) => {
         });
 }
 
+exports.login = (req, res, next) => {
+
+    passport.authenticate('local', { session: false }, (err, user, info) => {
+
+        if (err || !user) {
+            return res.status(400).json({
+                message: info ? info.message : 'Login failed',
+                user: user
+            });
+        }
+
+        req.login(user, { session: false }, (err) => {
+            if (err) next(err)
+            const body = { id: user.id, email: user.email };
+            //Sign the JWT token and populate the payload with the user email and id
+            const token = jwt.sign(
+                {
+                    user: body
+                },
+                process.env.JWT_KEY,
+                {
+                    expiresIn: process.env.TOKEN_DURATION
+                }
+            );
+
+            return res.status(200).json({
+                message: 'Succesfully login',
+                data: {
+                    userId: user.id,
+                    email: user.email,
+                    token: 'JWT ' + token
+
+                }
+            });
+        });
+    })
+        (req, res);
+}

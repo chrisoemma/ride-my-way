@@ -29,6 +29,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+require('./middleware/auth');
+
 app.use('/api/v1/rides', RideRouter);
 app.use('/api/v1/users', UserRouter);
 
