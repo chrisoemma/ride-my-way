@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const db = require('./config/database');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const RideRouter = require('./routes/api/rides');
@@ -48,7 +49,7 @@ app.use((error, req, res, next) => {
 });
 
 // error handler
-app.use((err, req, res, next) => {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
