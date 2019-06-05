@@ -1,13 +1,11 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-const db = require('./config/database');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 const RideRouter = require('./routes/api/rides');
 const UserRouter = require('./routes/api/users');
 
-var app = express();
+const app = express();
 
 //testing db connection
 // db
@@ -18,10 +16,6 @@ var app = express();
 //   .catch(err => {
 //     console.error('Unable to connect to the database:', err);
 //   });
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -54,7 +48,7 @@ app.use((error, req, res, next) => {
 });
 
 // error handler
-app.use(function (err, req, res, next) {
+app.use((err, req, res, next) => {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
