@@ -74,7 +74,12 @@ exports.login = (req, res, next) => {
 
         req.login(user, { session: false }, (err) => {
             if (err) next(err)
-            const body = { id: user.id, email: user.email };
+            const body = {
+                id: user.id, email: user.email,
+                firstName: user.firstName,
+                lastName: user.lastName,
+                roleId: user.roleId
+            };
             //Sign the JWT token and populate the payload with the user email and id
             const token = jwt.sign(
                 {
@@ -88,12 +93,8 @@ exports.login = (req, res, next) => {
 
             return res.status(200).json({
                 message: 'Succesfully login',
-                data: {
-                    userId: user.id,
-                    email: user.email,
-                    token: 'JWT ' + token
-
-                }
+                user: body,
+                token: token
             });
         });
     })
