@@ -31,18 +31,29 @@ exports.register = (req, res, next) => {
                             updatedAt: new Date()
                         });
                         user.save()
-                            .then(result => {
+                            .then(user => {
+                                const body = {
+                                    id: user.id, email: user.email,
+                                    firstName: user.firstName,
+                                    lastName: user.lastName,
+                                    roleId: user.roleId
+                                };
+                                //Sign the JWT token and populate the payload with the user email and id
+                                const token = jwt.sign(
+                                    {
+                                        user: body
+                                    },
+                                    process.env.JWT_KEY,
+                                    {
+                                        expiresIn: process.env.TOKEN_DURATION
+                                    }
+                                );
+
                                 res.status(201).json({
                                     code: 201,
                                     message: 'User successfully created',
-                                    data: {
-                                        id: result.id,
-                                        firstName: result.firstName,
-                                        lastName: result.lastName,
-                                        email: result.email,
-                                        roleId: result.roleId
-
-                                    }
+                                    user: body,
+                                    token: token
                                 })
                             })
                             .catch(err => {
