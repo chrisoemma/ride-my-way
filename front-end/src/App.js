@@ -9,6 +9,7 @@ import DriverProfile from './components/driver/DriverProfile';
 import PreviousRides from './components/passenger/PreviousRides';
 import OfferedRides from './components/driver/OfferedRides';
 import RideRequests from './components/driver/RideRequests';
+import Authenticated from './components/auth/Authenticated';
 
 function App() {
 
@@ -17,13 +18,15 @@ function App() {
     <Router>
       <React.Fragment>
         <Route exact path="/" component={Home} />
-        <Route path="/passenger_profile" component={PassengerProfile} />
-        <Route path="/passenger_dashboard" component={PassengerDashboard} />
-        <Route path="/driver_profile" component={DriverProfile} />
-        <Route path="/find_ride" component={NewRide} />
-        <Route path="/previous_rides" component={PreviousRides} />
-        <Route path="/offered_rides" component={OfferedRides} />
-        <Route path="/accept_rides" component={RideRequests} />
+        <Authenticated>
+          <Route path="/passenger_profile" component={PassengerProfile} />
+          <Route path="/passenger_dashboard" component={PassengerDashboard} />
+          <Route path="/driver_profile" component={DriverProfile} />
+          <Route path="/find_ride" component={NewRide} />
+          <Route path="/previous_rides" component={PreviousRides} />
+          <Route path="/offered_rides" component={OfferedRides} />
+          <Route path="/accept_rides" component={RideRequests} />
+        </Authenticated>
       </React.Fragment>
     </Router>
 
