@@ -19,7 +19,7 @@
   margin: auto;
   width: 25%;
   border: 1px solid #7c7e7e;
-  margin-top: 100px;
+  margin-top:20px;
   background-color: #fff;
   padding: 35px;
   border-radius: 5px;
@@ -50,6 +50,7 @@ input[type="password"],
   box-sizing: border-box;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
+  outline: 0;
 }
 
 .login button,
@@ -64,6 +65,7 @@ input[type="password"],
   background-color: #3b81bf;
   font-weight: bold;
   border-radius: 50px;
+  outline: 0;
 }
 
 .login .nav-links {
@@ -237,6 +239,7 @@ input[type="password"],
   font-family: "Poppins", sans-serif;
   border-style: none;
   cursor: pointer;
+  outline: 0;
 }
 .main {
   float: right;
