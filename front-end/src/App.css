@@ -405,9 +405,7 @@ tr:nth-child(even) {
     border-radius: 3px;
     margin-top: -20px;
     padding: 10px;
-    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(236, 231, 236, 0.4);
     background: linear-gradient(60deg,#ececf3,#ececf3);
-    margin: 0 15px;
     position: relative;
     z-index:3;
 }
