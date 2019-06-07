@@ -333,7 +333,8 @@ tr:nth-child(even) {
   width:30%;
   float:right;
   background-color:#fff; 
-  margin:60px;
+  margin:20px;
+  margin-top:60px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   border-radius:5px; 
 }
@@ -359,7 +360,7 @@ tr:nth-child(even) {
     flex: 1 1 auto;
     padding: 1rem;
     text-align: center;
-     font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .profile_body h6{
     font-size: .75rem;
@@ -376,4 +377,104 @@ tr:nth-child(even) {
 .profile_body p{
   color: #999!important;
   font-size: 14px;
+}
+.profile_edit{
+    border: 0;
+    margin-left: 20px;
+    margin-top: 60px;
+    border-radius: 6px;
+    color: #333;
+    background: #fff;
+    width: 48%;
+    height:90%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #eee;
+    border-radius: .25rem;
+    font-size: .79rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.profile_header{
+    border-radius: 3px;
+    margin-top: -20px;
+    padding: 10px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(236, 231, 236, 0.4);
+    background: linear-gradient(60deg,#ececf3,#ececf3);
+    margin: 0 15px;
+    position: relative;
+    z-index:3;
+}
+.profile_header p{
+      display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.profile_form{
+  padding-top:50px;
+}
+
+.form-group {
+    padding-bottom: 10px;
+    position: relative;
+    margin: 8px;
+    width: 45%;
+    float:left;
+
+}
+
+.form-group .form-control{
+  background: no-repeat bottom,50% calc(100% - 1px);
+    background-size: 0 100%,100% 100%;
+    border: 0;
+    height: 36px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    padding: .4375rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    border-bottom: 1px solid #d2d2d2;
+    outline:0
+}
+
+.form-group ::placeholder{
+    color: #aaa;
+    will-change: left,top,contents;
+    line-height: 1.4;
+    font-weight: 400;
+    position: absolute;
+    pointer-events: none;
+    transition: all .3s ease;
+    padding-left:10px;  
+    font-family: "Poppins", sans-serif;
+    font-size:0.85em;
+}
+
+.profile_form button{
+  padding: 13px;
+  margin-left:40% ;
+  margin-top:10%;
+  cursor: pointer;
+  color: #fff;
+  background-color: #3033e4;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  border-style: none;
+  width: 120px;
+  outline: 0;
 }

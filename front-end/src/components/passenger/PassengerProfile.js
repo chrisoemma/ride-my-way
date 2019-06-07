@@ -9,12 +9,47 @@ function PassengerProfile() {
         <React.Fragment>
             <Navbar />
             <SideNav />
-            <div class="main">
-                <div class="profile_info">
-                    <div class="profile_image">
+            <div className="main">
+                <div class="profile_edit">
+                    <div className="profile_header">
+                        <h4>Edit Profile</h4>
+                        <p>Complete your profile</p>
+                    </div>
+                    <div className="profile_form">
+                        <form>
+                            <div className="form-group">
+
+                                <input type="text" className="form-control" placeholder="First Name" />
+                            </div>
+                            <div className="form-group">
+
+                                <input type="text" className="form-control" placeholder="Last Name" />
+                            </div>
+                            <div className="form-group">
+
+                                <input type="email" className="form-control" placeholder="Email" />
+                            </div>
+                            <div className="form-group">
+
+                                <input type="text" className="form-control" placeholder="County" />
+                            </div>
+                            <div className="form-group">
+
+                                <input type="text" className="form-control" placeholder="City" />
+                            </div>
+                            <div className="form-group">
+
+                                <input type="text" className="form-control" placeholder="Phone Number" />
+                            </div>
+                            <button type="submit">Update info</button>
+                        </form>
+                    </div>
+                </div>
+                <div className="profile_info">
+                    <div className="profile_image">
                         <img src={require('../images/profile.jpg')} alt="user" />
                     </div>
-                    <div class="profile_body">
+                    <div className="profile_body">
                         <h6>Passenger</h6>
                         <h4>Chrisostom Kaweza</h4>
                         <p>Lorem ipsum lorem ipsum
