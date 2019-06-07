@@ -18,28 +18,40 @@ function PassengerProfile() {
                     <div className="profile_form">
                         <form>
                             <div className="form-group">
-
-                                <input type="text" className="form-control" placeholder="First Name" />
+                                <input type="text"
+                                    className="form-control"
+                                    placeholder="First Name"
+                                />
                             </div>
                             <div className="form-group">
-
-                                <input type="text" className="form-control" placeholder="Last Name" />
+                                <input type="text"
+                                    className="form-control"
+                                    placeholder="Last Name"
+                                />
                             </div>
                             <div className="form-group">
-
-                                <input type="email" className="form-control" placeholder="Email" />
+                                <input type="email"
+                                    className="form-control"
+                                    placeholder="Email"
+                                />
                             </div>
                             <div className="form-group">
-
-                                <input type="text" className="form-control" placeholder="County" />
+                                <input type="text"
+                                    className="form-control"
+                                    placeholder="County"
+                                />
                             </div>
                             <div className="form-group">
-
-                                <input type="text" className="form-control" placeholder="City" />
+                                <input type="text"
+                                    className="form-control"
+                                    placeholder="City"
+                                />
                             </div>
                             <div className="form-group">
-
-                                <input type="text" className="form-control" placeholder="Phone Number" />
+                                <input type="text"
+                                    className="form-control"
+                                    placeholder="Phone Number"
+                                />
                             </div>
                             <button type="submit">Update info</button>
                         </form>
@@ -47,7 +59,9 @@ function PassengerProfile() {
                 </div>
                 <div className="profile_info">
                     <div className="profile_image">
-                        <img src={require('../images/profile.jpg')} alt="user" />
+                        <img src={require('../images/profile.jpg')}
+                            alt="user"
+                        />
                     </div>
                     <div className="profile_body">
                         <h6>Passenger</h6>
