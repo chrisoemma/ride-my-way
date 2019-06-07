@@ -8,7 +8,7 @@ function DriverSideNav(props) {
         <div className="sidebar">
             <Link to="/accept_rides"><button>ACCEPT RIDE</button></Link>
             <ul>
-                <li><Link to="/dashboard"><i className="fa fa-fw fa-home"></i>Dashbord</Link></li>
+                <li><Link to="/dashboard"><i className="fa fa-fw fa-home"></i>Dashboard</Link></li>
                 <li><Link to="/profile"><i className="fa fa-fw fa-user"></i>Profile</Link></li>
                 <li onClick={props.navDropDown}><Link><i className="fa fa-fw fa-car"></i> Rides
                     <i className="fa fa-angle-right" aria-hidden="true"></i>
