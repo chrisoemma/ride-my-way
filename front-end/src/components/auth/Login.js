@@ -28,7 +28,7 @@ class Login extends React.Component {
         }).then(res => {
             localStorage.setItem('jwt', res.data.token);
 
-            this.props.history.push('/passenger_profile');
+            this.props.history.push('/profile');
         }
         );
     }
