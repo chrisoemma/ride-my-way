@@ -20,7 +20,8 @@ function PassengerSideNav(props) {
                         </ul>
                     </div>
                 </li>
-                <li><a href="#services"><i className="fa fa-fw fa-wrench"></i> Settings</a></li>
+                <li><Link to="/users"><i className="fa fa-fw fa-users"></i>Users</Link></li>
+                <li><Link to="/all_rides"><i className="fa fa-fw fa-car"></i>All rides</Link></li>
             </ul>
         </div>
     )

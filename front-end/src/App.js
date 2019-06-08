@@ -9,6 +9,7 @@ import PreviousRides from './components/passenger/PreviousRides';
 import OfferedRides from './components/driver/OfferedRides';
 import RideRequests from './components/driver/RideRequests';
 import Authenticated from './components/auth/Authenticated';
+import Rides from './components/admin/Rides';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/previous_rides" component={PreviousRides} />
           <Route path="/offered_rides" component={OfferedRides} />
           <Route path="/accept_rides" component={RideRequests} />
+          <Route path="/all_rides" component={Rides} />
         </Authenticated>
       </React.Fragment>
     </Router>
