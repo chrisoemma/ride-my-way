@@ -74,7 +74,7 @@ exports.singleRideOffer = (req, res, next) => {
 exports.newRide = (req, res, next) => {
     const ride = Ride.build({
         userId: 2,
-        pickupArea: 'Canada',
+        pickupArea: 'Seed space',
         destination: req.body.destination,
         status: '',
         createdAt: new Date(),
