@@ -26,7 +26,12 @@ class Login extends React.Component {
             email: this.state.email,
             password: this.state.password
         }).then(res => {
+            console.log(res.data);
             localStorage.setItem('jwt', res.data.token);
+            localStorage.setItem('roleId', res.data.user.roleId);
+            localStorage.setItem('firstName', res.data.user.firstName);
+            localStorage.setItem('lastName', res.data.user.lastName);
+            localStorage.setItem('id', res.data.user.id);
             this.props.history.push('/dashboard');
         }
         );

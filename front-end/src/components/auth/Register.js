@@ -35,6 +35,10 @@ class Register extends React.Component {
             roleId: this.state.roleId
         }).then(res => {
             localStorage.setItem('jwt', res.data.token);
+            localStorage.setItem('roleId', res.data.user.roleId);
+            localStorage.setItem('firstName', res.data.user.firstName);
+            localStorage.setItem('lastName', res.data.user.lastName);
+            localStorage.setItem('id', res.data.user.id);
             this.props.history.push('/dashboard');
         }
         );

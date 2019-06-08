@@ -5,7 +5,6 @@ import Destination from './Destination';
 import CurrentMap from './CurrentMap';
 
 function NewRide() {
-
     return (
 
         <React.Fragment>

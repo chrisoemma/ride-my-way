@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getJwt } from './Jwt';
+import { getJwt } from './Authinfo';
 import { withRouter } from 'react-router-dom';
 
 class Authenticated extends Component {
