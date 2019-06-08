@@ -127,6 +127,8 @@ exports.getAllUsers = (req, res, next) => {
                         firstName: user.firstName,
                         lastName: user.lastName,
                         roleId: user.roleId,
+                        createdAt: user.createdAt,
+                        updatedAt: user.updatedAt,
                         request: {
                             type: "GET",
                             url: "http://localhost:4000/users/" + user.id
