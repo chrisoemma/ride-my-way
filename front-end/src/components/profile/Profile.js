@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../layouts/Navbar';
 import SideNav from '../layouts/SideNav';
+import { firstName, lastName, roleId } from '../auth/Authinfo';
 
 function PassengerProfile() {
 
@@ -64,8 +65,8 @@ function PassengerProfile() {
                         />
                     </div>
                     <div className="profile_body">
-                        <h6>Passenger</h6>
-                        <h4>Chrisostom Kaweza</h4>
+                        {roleId() == 1 ? < h6 > Passenger</h6> : < h6 >Driver</h6>}
+                        <h4>{firstName()} {lastName()}</h4>
                         <p>Lorem ipsum lorem ipsum
                          loerm Lorem ipsum lorem ipsum loerm Lorem ipsum lorem ipsum loerm</p>
                         <br />
