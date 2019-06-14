@@ -22,7 +22,7 @@ class Login extends React.Component {
 
     submit(e) {
         e.preventDefault();
-        axios.post('/api/v1/users/login', {
+        axios.post('/users/login', {
             email: this.state.email,
             password: this.state.password
         }).then(res => {

@@ -23,7 +23,7 @@ class Destination extends React.Component {
     submit(e) {
         const jwt = getJwt();
         e.preventDefault();
-        axios.post('/api/v1/rides', {destination: this.state.destination}, { headers: { Authorization: `Bearer ${jwt}` } }
+        axios.post('/rides', {destination: this.state.destination}, { headers: { Authorization: `Bearer ${jwt}` } }
         ).then(res => {
             this.props.history.push('/all_rides');
         }

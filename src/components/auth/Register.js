@@ -27,7 +27,7 @@ class Register extends React.Component {
 
     submit(e) {
         e.preventDefault();
-        axios.post('/api/v1/users/register', {
+        axios.post('/users/register', {
             firstName: this.state.firstName,
             lastName: this.state.lastName,
             email: this.state.email,

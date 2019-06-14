@@ -10,7 +10,7 @@ class Rides extends React.Component {
 
     componentDidMount() {
         const jwt = getJwt();
-        axios.get('/api/v1/rides', { headers: { Authorization: `Bearer ${jwt}` } })
+        axios.get('rides', { headers: { Authorization: `Bearer ${jwt}` } })
             .then(res => {
                 this.setState({ rides: res.data.data });
             })

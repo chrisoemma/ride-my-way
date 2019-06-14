@@ -10,7 +10,7 @@ class Users extends React.Component {
 
     componentDidMount() {
         const jwt = getJwt();
-        axios.get('/api/v1/users', { headers: { Authorization: `Bearer ${jwt}` } })
+        axios.get('/users', { headers: { Authorization: `Bearer ${jwt}` } })
             .then(res => {
                 console.log(res);
                 this.setState({ users: res.data.users });
