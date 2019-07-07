@@ -5,6 +5,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const RideRouter = require('./routes/api/rides');
 const UserRouter = require('./routes/api/users');
+const swaggerUi = require('swagger-ui-express'),
+swaggerDocument = require('./controllers/swagger.json');
 
 const app = express();
 
@@ -41,6 +43,7 @@ app.use((req, res, next) => {
 
 app.use('/api/v1/rides', passport.authenticate('jwt', { session: false }), RideRouter);
 app.use('/api/v1/users', UserRouter);
+app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 
 //error hundleling 
