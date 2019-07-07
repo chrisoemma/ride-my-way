@@ -9,7 +9,7 @@
         "url": "https://opensource.org/licenses/MIT"
       }
     },
-    "host": "//rideapps.herokuapp.com",
+    "host": "rideapps.herokuapp.com",
     "basePath": "/api/v1",
     "tags": [
       {
