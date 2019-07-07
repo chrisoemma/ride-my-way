@@ -9,7 +9,7 @@
         "url": "https://opensource.org/licenses/MIT"
       }
     },
-    "host": "https://rideapps.herokuapp.com",
+    "host": "//rideapps.herokuapp.com",
     "basePath": "/api/v1",
     "tags": [
       {
@@ -17,7 +17,7 @@
         "description": "We have three types of users in the system drivers, passengers, admin"
       }
     ],
-    "schemes": ["http"],
+    "schemes": ["https"],
     "consumes": ["application/json"],
     "produces": ["application/json"],
     "paths": {
