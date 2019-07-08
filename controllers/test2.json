@@ -1,0 +1,125 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Ride-My-way API documentation",
+      "description": "Ride-My-Way is a car pooling application that makes driver and passenger meet together for a ride. Below are all explanation that helps you start use the application ",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "rideapps.herokuapp.com",
+    "basePath": "/api/v1",
+    "tags": [
+      {
+        "name": "Users",
+        "description": "We have three types of users in the system drivers, passengers, admin"
+      }
+    ],
+    "schemes": ["https"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    "paths": {
+      "/users/": {
+        "get": {
+          "tags": ["Users"],
+          "summary": "Get all users in system",
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "$ref": "#/definitions/Users"
+              }
+            }
+          }
+        }
+      },
+      "/users/{userId}": {
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "description": "ID of user that we want to find",
+            "type": "string"
+          }
+        ],
+        "get": {
+          "tags": ["Users"],
+          "summary": "Get user with given ID",
+          "responses": {
+            "200": {
+              "description": "User is found",
+              "schema": {
+                "$ref": "#/definitions/User"
+              }
+            }
+          }
+        }
+      },
+      "/users/register": {
+        "post": {
+          "tags": ["Users"],
+          "description": "Create new user in system",
+          "parameters": [
+            {
+              "name": "user",
+              "in": "body",
+              "description": "User that we want to create",
+              "schema": {
+                "$ref": "#/definitions/User"
+              }
+            }
+          ]
+        }
+      },
+      "/rides/": {
+        "get": {
+          "tags": ["Rides"],
+          "summary": "Get all rides in system",
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "$ref": "#/definitions/Rides"
+              }
+            }
+          }
+        }
+      }
+    },
+    
+    "definitions": {
+      "User": {
+        "type":"object",
+        "required": ["email"],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "uniqueItems": true
+          },
+          "email": {
+            "type": "string",
+            "uniqueItems": true
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "roleId":{
+            "type":"integer"
+          },
+          "password":{
+            "string":"password"
+          }
+        }
+      },
+      "xml": {
+        "name":"User"
+      }
+    }
+  }
+  
