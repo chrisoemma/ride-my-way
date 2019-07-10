@@ -33,7 +33,10 @@
               "$ref": "#/definitions/User"
             }
           }
-        }
+        },
+        "security": [
+
+        ]
       }
     },
 
@@ -82,7 +85,10 @@
           "400": {
             "description": "Invalid username/password supplied"
           }
-        }
+        },
+        "security": [
+
+        ]
       }
     },
     "/users/": {
@@ -184,6 +190,18 @@
       }
     }
   },
+  "securityDefinitions": {
+    "jwt": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization"
+    }
+},
+"security": [
+    {
+        "jwt": []
+    }
+],
   "definitions": {
     "User": {
       "type": "object",
